@@ -13,6 +13,7 @@ namespace Logic
             Console.WriteLine("test");
             Console.WriteLine("test 2 ");
             Console.WriteLine("finally it works");
+            Console.WriteLine("test natasha");
         }
     }
 }
