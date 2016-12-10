@@ -10,10 +10,10 @@ namespace Logic
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("test");
-            Console.WriteLine("test 2 ");
-            Console.WriteLine("finally it works");
-            Console.WriteLine("test natasha");
+            using(var context = new Context())
+            {
+               
+            }
         }
     }
 }
