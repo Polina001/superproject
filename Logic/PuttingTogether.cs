@@ -24,11 +24,11 @@ namespace Logic
 
             GraphicFinalPostCard.FillRegion(blueBrush, fillrectangle);
 
-            GraphicFinalPostCard.DrawImage(System.Drawing.Image.FromFile("c:\\img2.jpeg"), new Point(0,0));
+            GraphicFinalPostCard.DrawImage(System.Drawing.Image.FromFile(@"../../img1.jpg"), new Point(0,0));
 
-            GraphicFinalPostCard.DrawImage(System.Drawing.Image.FromFile("c:\\img2.jpeg"), new Point(874, 0));
+            GraphicFinalPostCard.DrawImage(System.Drawing.Image.FromFile(@"../../img2.jpg"), new Point(874, 0));
 
-            FinalPostCard.Save(@"/Users/mariakurepova/Desktop/final.jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);
+            FinalPostCard.Save(@"../../final.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
 
             Console.WriteLine("done");
 
