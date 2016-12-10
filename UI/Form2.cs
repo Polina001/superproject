@@ -12,25 +12,13 @@ using MetroFramework.Forms;
 
 namespace UI
 {
-    public partial class ChrisPost : MetroForm
+    public partial class Form2 : MetroForm
     {
-        public ChrisPost()
+        public Form2()
         {
             InitializeComponent();
             MetroStyleManager.Default.Style = MetroFramework.MetroColorStyle.Lime;
             MetroStyleManager.Default.Theme = MetroFramework.MetroThemeStyle.Dark;
         }
-
-        private void metroButton1_Click(object sender, EventArgs e)
-        {
-            Form2 f2 = new Form2();
-            f2.ShowDialog();
-        }
-
-        private void metroButton2_Click(object sender, EventArgs e)
-        {
-            ActiveForm.Close();
-        }
-
     }
 }
