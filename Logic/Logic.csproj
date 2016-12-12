@@ -67,6 +67,14 @@
     <Compile Include="Migrations\201612101551324_Inscriptiomn1.Designer.cs">
       <DependentUpon>201612101551324_Inscriptiomn1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612121351515_Image2.cs" />
+    <Compile Include="Migrations\201612121351515_Image2.Designer.cs">
+      <DependentUpon>201612121351515_Image2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612121403520_Inscription3.cs" />
+    <Compile Include="Migrations\201612121403520_Inscription3.Designer.cs">
+      <DependentUpon>201612121403520_Inscription3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,6 +95,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201612101551324_Inscriptiomn1.resx">
       <DependentUpon>201612101551324_Inscriptiomn1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612121351515_Image2.resx">
+      <DependentUpon>201612121351515_Image2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612121403520_Inscription3.resx">
+      <DependentUpon>201612121403520_Inscription3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

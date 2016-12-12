@@ -12,5 +12,6 @@ namespace Logic
         public byte[] Picture { get; set; }
 
         public Theme Theme { get; set; }
+
     }
 }
