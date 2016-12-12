@@ -31,6 +31,5 @@ namespace UI
         {
             ActiveForm.Close();
         }
-
     }
 }
