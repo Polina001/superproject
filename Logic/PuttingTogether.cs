@@ -12,23 +12,24 @@ namespace Logic
     {
         public void PuttingPicturesTogether()
         {
-            System.Drawing.Image FinalPostCard = new Bitmap(1748, 2480);
+            System.Drawing.Image FinalPostCard = new Bitmap(1550, 795);
 
             Graphics GraphicFinalPostCard = Graphics.FromImage(FinalPostCard);
 
-            Rectangle rectangle = new Rectangle(0, 0, 1748, 2480);
+            Rectangle rectangle = new Rectangle(0, 0, 550, 795);
+
 
             SolidBrush blueBrush = new SolidBrush(Color.Blue);
 
             Region fillrectangle = new Region(rectangle);
 
-            GraphicFinalPostCard.FillRegion(blueBrush, fillrectangle);
+            // GraphicFinalPostCard.FillRegion(blueBrush, fillrectangle);
 
-            GraphicFinalPostCard.DrawImage(System.Drawing.Image.FromFile(@"../../img1.jpg"), new Point(0,0));
+            GraphicFinalPostCard.DrawImage(System.Drawing.Image.FromFile(@"../../img1.jpg"), new Rectangle(0, 0, FinalPostCard.Width/2, FinalPostCard.Height));
 
-            GraphicFinalPostCard.DrawImage(System.Drawing.Image.FromFile(@"../../img2.jpg"), new Point(874, 0));
+            GraphicFinalPostCard.DrawImage(System.Drawing.Image.FromFile(@"../../img3.jpg"), new Rectangle(FinalPostCard.Width/2, 0, FinalPostCard.Width/2, FinalPostCard.Height));
 
-            FinalPostCard.Save(@"../../final.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+            FinalPostCard.Save(@"../../final3.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
 
             Console.WriteLine("done");
 
