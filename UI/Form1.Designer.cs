@@ -28,47 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // metroLabel1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(306, 265);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.metroLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.metroLabel1.Location = new System.Drawing.Point(42, 104);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(495, 124);
+            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Lime;
+            this.metroLabel1.TabIndex = 5;
+            this.metroLabel1.Text = "Hello! \r\nWe are welcome to present you a new way to create Christmas cards! \r\nDo " +
+    "you want to know more& Click \"Go!\" and you create your own exciting card!";
+            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.UseStyleColors = true;
             // 
-            // button1
+            // metroButton2
             // 
-            this.button1.Location = new System.Drawing.Point(373, 48);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = " ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.metroButton2.Location = new System.Drawing.Point(359, 275);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(105, 22);
+            this.metroButton2.Style = MetroFramework.MetroColorStyle.Lime;
+            this.metroButton2.TabIndex = 4;
+            this.metroButton2.Text = "Sorry, not now :(";
+            this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.metroButton1.Location = new System.Drawing.Point(101, 275);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(103, 22);
+            this.metroButton1.Style = MetroFramework.MetroColorStyle.Lime;
+            this.metroButton1.TabIndex = 3;
+            this.metroButton1.Text = "Go!";
+            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // ChrisPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(509, 357);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(585, 367);
+            this.Controls.Add(this.metroLabel1);
+            this.Controls.Add(this.metroButton2);
+            this.Controls.Add(this.metroButton1);
+            this.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Name = "ChrisPost";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Style = MetroFramework.MetroColorStyle.Lime;
+            this.Text = "Welcome to ChristPost!";
+            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }
 
