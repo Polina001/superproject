@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Logic
 {
@@ -25,15 +25,20 @@ namespace Logic
                 {
                     fs.Read(img, 0, img.Length);
                 }
+
+                var curTheme = new Theme
+                {
+                    ThemeName = "Christmas",
+                    
+                };
+                context.Themes.AddOrUpdate(a => a.ThemeName, curTheme);
                 context.Images.Add(new Image
                 {
-                    Picture = img
-                });
-                context.Themes.Add(new Theme
-                {
-                    ThemeName = "111"
+                    Picture = img,
+                    ThemeID = curTheme.ID
                 });
                 context.SaveChanges();
+                
             }
         }
     }

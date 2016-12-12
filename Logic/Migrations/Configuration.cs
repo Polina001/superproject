@@ -10,7 +10,6 @@ namespace Logic.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "Logic.Context";
         }
 
         protected override void Seed(Logic.Context context)

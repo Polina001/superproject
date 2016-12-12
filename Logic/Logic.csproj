@@ -55,25 +55,9 @@
     <Compile Include="Context.cs" />
     <Compile Include="Image.cs" />
     <Compile Include="Inscription.cs" />
-    <Compile Include="Migrations\201612101543541_InitialCreate.cs" />
-    <Compile Include="Migrations\201612101543541_InitialCreate.Designer.cs">
-      <DependentUpon>201612101543541_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612101550068_Image1.cs" />
-    <Compile Include="Migrations\201612101550068_Image1.Designer.cs">
-      <DependentUpon>201612101550068_Image1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612101551324_Inscriptiomn1.cs" />
-    <Compile Include="Migrations\201612101551324_Inscriptiomn1.Designer.cs">
-      <DependentUpon>201612101551324_Inscriptiomn1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612121351515_Image2.cs" />
-    <Compile Include="Migrations\201612121351515_Image2.Designer.cs">
-      <DependentUpon>201612121351515_Image2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612121403520_Inscription3.cs" />
-    <Compile Include="Migrations\201612121403520_Inscription3.Designer.cs">
-      <DependentUpon>201612121403520_Inscription3.cs</DependentUpon>
+    <Compile Include="Migrations\201612122125402_Inscription1.cs" />
+    <Compile Include="Migrations\201612122125402_Inscription1.Designer.cs">
+      <DependentUpon>201612122125402_Inscription1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -87,20 +71,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201612101543541_InitialCreate.resx">
-      <DependentUpon>201612101543541_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612101550068_Image1.resx">
-      <DependentUpon>201612101550068_Image1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612101551324_Inscriptiomn1.resx">
-      <DependentUpon>201612101551324_Inscriptiomn1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612121351515_Image2.resx">
-      <DependentUpon>201612121351515_Image2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612121403520_Inscription3.resx">
-      <DependentUpon>201612121403520_Inscription3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201612122125402_Inscription1.resx">
+      <DependentUpon>201612122125402_Inscription1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

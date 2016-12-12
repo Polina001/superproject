@@ -11,6 +11,7 @@ namespace Logic
         public int ID { get; set; }
         public byte[] InscriptionText { get; set; }
 
+        public int ThemeID { get; set; }
         public Theme Theme { get; set; }
     }
 }
