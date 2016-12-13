@@ -20,5 +20,11 @@ namespace UI
             MetroStyleManager.Default.Style = MetroFramework.MetroColorStyle.Lime;
             MetroStyleManager.Default.Theme = MetroFramework.MetroThemeStyle.Dark;
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = null;
+            pictureBox1.Invalidate();
+        }
     }
 }

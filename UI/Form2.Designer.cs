@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.PictureShow = new MetroFramework.Controls.MetroButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.Clear = new MetroFramework.Controls.MetroButton();
+            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // metroButton3
+            // PictureShow
             // 
-            this.metroButton3.Location = new System.Drawing.Point(572, 103);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(114, 26);
-            this.metroButton3.Style = MetroFramework.MetroColorStyle.Lime;
-            this.metroButton3.TabIndex = 5;
-            this.metroButton3.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.PictureShow.Location = new System.Drawing.Point(572, 103);
+            this.PictureShow.Name = "PictureShow";
+            this.PictureShow.Size = new System.Drawing.Size(114, 26);
+            this.PictureShow.Style = MetroFramework.MetroColorStyle.Lime;
+            this.PictureShow.TabIndex = 5;
+            this.PictureShow.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // label1
             // 
@@ -68,18 +70,41 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // Clear
+            // 
+            this.Clear.Location = new System.Drawing.Point(572, 461);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(114, 26);
+            this.Clear.Style = MetroFramework.MetroColorStyle.Lime;
+            this.Clear.TabIndex = 6;
+            this.Clear.Text = "Clear";
+            this.Clear.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Clear.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // metroComboBox1
+            // 
+            this.metroComboBox1.FormattingEnabled = true;
+            this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.Location = new System.Drawing.Point(558, 168);
+            this.metroComboBox1.Name = "metroComboBox1";
+            this.metroComboBox1.Size = new System.Drawing.Size(144, 29);
+            this.metroComboBox1.TabIndex = 7;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 510);
-            this.Controls.Add(this.metroButton3);
+            this.Controls.Add(this.metroComboBox1);
+            this.Controls.Add(this.Clear);
+            this.Controls.Add(this.PictureShow);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form2";
             this.Style = MetroFramework.MetroColorStyle.Lime;
             this.Text = "Create your card";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Click += new System.EventHandler(this.metroButton1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -88,9 +113,11 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroButton metroButton3;
+        private MetroFramework.Controls.MetroButton PictureShow;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private MetroFramework.Controls.MetroButton Clear;
+        private MetroFramework.Controls.MetroComboBox metroComboBox1;
     }
 }
