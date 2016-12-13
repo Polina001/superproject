@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    class Context : DbContext
+    public class Context : DbContext
     {
-        public DbSet<Theme> Themes { get; set; }
-        public DbSet<Image> Images { get; set; }
-        public DbSet<Inscription> Inscriptions { get; set; }
+        public DbSet<Theme> Theme { get; set; }
+        public DbSet<Inscription> Inscription { get; set; }
+        public DbSet<PictureForProject> Pictures { get; set; }
 
         public Context() : base("localsql")
         {
-
+                
         }
     }
 }

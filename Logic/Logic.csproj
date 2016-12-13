@@ -34,18 +34,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,25 +54,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context.cs" />
-    <Compile Include="Image.cs" />
+    <Compile Include="ConvertingByteToJpeg.cs" />
+    <Compile Include="CreatingListOfImages.cs" />
+    <Compile Include="FindinThemeID.cs" />
     <Compile Include="Inscription.cs" />
-    <Compile Include="Migrations\201612101543541_InitialCreate.cs" />
-    <Compile Include="Migrations\201612101543541_InitialCreate.Designer.cs">
-      <DependentUpon>201612101543541_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612101550068_Image1.cs" />
-    <Compile Include="Migrations\201612101550068_Image1.Designer.cs">
-      <DependentUpon>201612101550068_Image1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612101551324_Inscriptiomn1.cs" />
-    <Compile Include="Migrations\201612101551324_Inscriptiomn1.Designer.cs">
-      <DependentUpon>201612101551324_Inscriptiomn1.cs</DependentUpon>
+    <Compile Include="Migrations\201612131222343_InitialCreate.cs" />
+    <Compile Include="Migrations\201612131222343_InitialCreate.Designer.cs">
+      <DependentUpon>201612131222343_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="OutputtingInPictureBox.cs" />
+    <Compile Include="PictureForProject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PuttingPicturesTogether.cs" />
     <Compile Include="Theme.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,14 +75,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201612101543541_InitialCreate.resx">
-      <DependentUpon>201612101543541_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612101550068_Image1.resx">
-      <DependentUpon>201612101550068_Image1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612101551324_Inscriptiomn1.resx">
-      <DependentUpon>201612101551324_Inscriptiomn1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201612131222343_InitialCreate.resx">
+      <DependentUpon>201612131222343_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,7 +3,7 @@ namespace Logic.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class Inscription1 : DbMigration
     {
         public override void Up()
         {
@@ -13,12 +13,11 @@ namespace Logic.Migrations
                     {
                         ID = c.Int(nullable: false, identity: true),
                         Picture = c.Binary(),
-                        IDTheme = c.Int(nullable: false),
-                        Theme_ID = c.Int(),
+                        ThemeID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Themes", t => t.Theme_ID)
-                .Index(t => t.Theme_ID);
+                .ForeignKey("dbo.Themes", t => t.ThemeID, cascadeDelete: true)
+                .Index(t => t.ThemeID);
             
             CreateTable(
                 "dbo.Themes",
@@ -35,21 +34,20 @@ namespace Logic.Migrations
                     {
                         ID = c.Int(nullable: false, identity: true),
                         InscriptionText = c.Binary(),
-                        IDTheme = c.Int(nullable: false),
-                        Theme_ID = c.Int(),
+                        ThemeID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Themes", t => t.Theme_ID)
-                .Index(t => t.Theme_ID);
+                .ForeignKey("dbo.Themes", t => t.ThemeID, cascadeDelete: true)
+                .Index(t => t.ThemeID);
             
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.Inscriptions", "Theme_ID", "dbo.Themes");
-            DropForeignKey("dbo.Images", "Theme_ID", "dbo.Themes");
-            DropIndex("dbo.Inscriptions", new[] { "Theme_ID" });
-            DropIndex("dbo.Images", new[] { "Theme_ID" });
+            DropForeignKey("dbo.Inscriptions", "ThemeID", "dbo.Themes");
+            DropForeignKey("dbo.Images", "ThemeID", "dbo.Themes");
+            DropIndex("dbo.Inscriptions", new[] { "ThemeID" });
+            DropIndex("dbo.Images", new[] { "ThemeID" });
             DropTable("dbo.Inscriptions");
             DropTable("dbo.Themes");
             DropTable("dbo.Images");

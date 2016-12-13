@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    class Theme
+    public class Theme
     {
         public int ID { get; set; }
         public string ThemeName { get; set; }
