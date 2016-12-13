@@ -21,10 +21,13 @@ namespace UI
             MetroStyleManager.Default.Theme = MetroFramework.MetroThemeStyle.Dark;
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void metroButton3_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = null;
-            pictureBox1.Invalidate();
+            Logic.PuttingPicturesTogether ppt = new Logic.PuttingPicturesTogether();
+            var image = ppt.PuttingTogether();
+
+            Logic.OutputtingInPictureBox opb = new Logic.OutputtingInPictureBox();
+            opb.OutputtingPicture(pictureBox1 ,image);
         }
     }
 }
