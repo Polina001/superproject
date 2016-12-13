@@ -10,43 +10,30 @@ using System.Windows.Forms;
 using MetroFramework.Components;
 using MetroFramework.Forms;
 
-
 namespace UI
 {
-    public partial class Form2 : MetroForm
+    public partial class Form3 : MetroForm
     {
-        public Form2()
+        public Form3()
         {
             InitializeComponent();
             MetroStyleManager.Default.Style = MetroFramework.MetroColorStyle.Lime;
             MetroStyleManager.Default.Theme = MetroFramework.MetroThemeStyle.Dark;
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void Exit_Click(object sender, EventArgs e)
         {
             ActiveForm.Close();
         }
 
         private void SendToEmail_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
-            f3.ShowDialog();
+            //код для мэйла здесь
         }
 
-        private void Create_Click(object sender, EventArgs e)
+        private void metroTextBox1_Click(object sender, EventArgs e)
         {
-            //здесь создается картинка и выводится в pictureBox1
-        }
-
-        private void Clean_Click(object sender, EventArgs e)
-        {
-            pictureBox1.Image = null;
-            pictureBox1.Invalidate();
-        }
-
-        private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //выпадающий список тем
+            //здесь осуществляется ввод мэйла
         }
     }
 }

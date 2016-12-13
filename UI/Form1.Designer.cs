@@ -49,9 +49,9 @@
             // 
             // SorryNotNow
             // 
-            this.SorryNotNow.Location = new System.Drawing.Point(359, 275);
+            this.SorryNotNow.Location = new System.Drawing.Point(312, 262);
             this.SorryNotNow.Name = "SorryNotNow";
-            this.SorryNotNow.Size = new System.Drawing.Size(105, 22);
+            this.SorryNotNow.Size = new System.Drawing.Size(225, 35);
             this.SorryNotNow.Style = MetroFramework.MetroColorStyle.Lime;
             this.SorryNotNow.TabIndex = 4;
             this.SorryNotNow.Text = "Sorry, not now :(";
@@ -61,9 +61,9 @@
             // Go
             // 
             this.Go.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.Go.Location = new System.Drawing.Point(101, 275);
+            this.Go.Location = new System.Drawing.Point(42, 262);
             this.Go.Name = "Go";
-            this.Go.Size = new System.Drawing.Size(103, 22);
+            this.Go.Size = new System.Drawing.Size(225, 35);
             this.Go.Style = MetroFramework.MetroColorStyle.Lime;
             this.Go.TabIndex = 3;
             this.Go.Text = "Go!";
