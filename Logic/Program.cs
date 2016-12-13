@@ -1,8 +1,8 @@
-﻿using System.Data.Entity.Migrations;
-using System.IO;
-using System.Drawing;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Logic
 {
@@ -10,11 +10,13 @@ namespace Logic
     {
         static void Main(string[] args)
         {
-            using (var context = new Context())
-            {
-                
-            }
+            PuttingPicturesTogether p = new PuttingPicturesTogether();
+            p.PuttingTogether();
+
+            //using(var context = new Context())
+            //{
+               
+            //}
         }
     }
 }
-
