@@ -10,10 +10,13 @@ namespace Logic
     {
         static void Main(string[] args)
         {
-            using(var context = new Context())
-            {
+            PuttingPicturesTogether p = new PuttingPicturesTogether();
+            p.PuttingTogether();
+
+            //using(var context = new Context())
+            //{
                
-            }
+            //}
         }
     }
 }

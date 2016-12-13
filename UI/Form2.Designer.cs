@@ -37,12 +37,13 @@
             // 
             // metroButton3
             // 
-            this.metroButton3.Location = new System.Drawing.Point(572, 103);
+            this.metroButton3.Location = new System.Drawing.Point(893, 103);
             this.metroButton3.Name = "metroButton3";
             this.metroButton3.Size = new System.Drawing.Size(114, 26);
             this.metroButton3.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroButton3.TabIndex = 5;
             this.metroButton3.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
             // label1
             // 
@@ -64,7 +65,7 @@
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(39, 103);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(477, 384);
+            this.pictureBox1.Size = new System.Drawing.Size(739, 501);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -72,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(739, 510);
+            this.ClientSize = new System.Drawing.Size(1138, 693);
             this.Controls.Add(this.metroButton3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
