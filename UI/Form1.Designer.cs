@@ -42,7 +42,7 @@
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroLabel1.TabIndex = 5;
             this.metroLabel1.Text = "Hello! \r\nWe are welcome to present you a new way to create Christmas cards! \r\nDo " +
-    "you want to know more& Click \"Go!\" and you create your own exciting card!";
+    "you want to know more Click \"Go!\" and you create your own exciting card!";
             this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel1.UseStyleColors = true;
@@ -82,7 +82,7 @@
             this.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Name = "ChrisPost";
             this.Style = MetroFramework.MetroColorStyle.Lime;
-            this.Text = "Welcome to ChristPost!";
+            this.Text = "Welcome to Envelope!";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.ResumeLayout(false);
 

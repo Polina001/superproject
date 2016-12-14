@@ -35,7 +35,7 @@ namespace UI
 
         private void Create_Click(object sender, EventArgs e)
         {
-            //здесь создается картинка и выводится в pictureBox1
+            //здесь создается картинка и выводится в pictureBox
         }
 
         private void Clean_Click(object sender, EventArgs e)
