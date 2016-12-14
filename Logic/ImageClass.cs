@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    class Image
+    class ImageClass
     {
         public int ID { get; set; }
         public byte[] Picture { get; set; }
 
+        public int ThemeID { get; set; }
         public Theme Theme { get; set; }
+
     }
 }

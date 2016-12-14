@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.SorryNotNow = new MetroFramework.Controls.MetroButton();
+            this.Go = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -47,28 +47,28 @@
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel1.UseStyleColors = true;
             // 
-            // metroButton2
+            // SorryNotNow
             // 
-            this.metroButton2.Location = new System.Drawing.Point(359, 275);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(105, 22);
-            this.metroButton2.Style = MetroFramework.MetroColorStyle.Lime;
-            this.metroButton2.TabIndex = 4;
-            this.metroButton2.Text = "Sorry, not now :(";
-            this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            this.SorryNotNow.Location = new System.Drawing.Point(312, 262);
+            this.SorryNotNow.Name = "SorryNotNow";
+            this.SorryNotNow.Size = new System.Drawing.Size(225, 35);
+            this.SorryNotNow.Style = MetroFramework.MetroColorStyle.Lime;
+            this.SorryNotNow.TabIndex = 4;
+            this.SorryNotNow.Text = "Sorry, not now :(";
+            this.SorryNotNow.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.SorryNotNow.Click += new System.EventHandler(this.metroButton2_Click);
             // 
-            // metroButton1
+            // Go
             // 
-            this.metroButton1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.metroButton1.Location = new System.Drawing.Point(101, 275);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(103, 22);
-            this.metroButton1.Style = MetroFramework.MetroColorStyle.Lime;
-            this.metroButton1.TabIndex = 3;
-            this.metroButton1.Text = "Go!";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            this.Go.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Go.Location = new System.Drawing.Point(42, 262);
+            this.Go.Name = "Go";
+            this.Go.Size = new System.Drawing.Size(225, 35);
+            this.Go.Style = MetroFramework.MetroColorStyle.Lime;
+            this.Go.TabIndex = 3;
+            this.Go.Text = "Go!";
+            this.Go.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Go.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // ChrisPost
             // 
@@ -77,8 +77,8 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(585, 367);
             this.Controls.Add(this.metroLabel1);
-            this.Controls.Add(this.metroButton2);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.SorryNotNow);
+            this.Controls.Add(this.Go);
             this.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Name = "ChrisPost";
             this.Style = MetroFramework.MetroColorStyle.Lime;
@@ -91,8 +91,8 @@
         #endregion
 
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton SorryNotNow;
+        private MetroFramework.Controls.MetroButton Go;
     }
 }
 
