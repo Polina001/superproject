@@ -13,7 +13,7 @@ namespace Logic
     {
         public void OutputtingPicture(PictureBox pb, System.Drawing.Image image)
         {
-            pb.Location = new Point(0, 0);
+            pb.Location = new Point(37, 137);
             pb.Image = image;
 
         }
