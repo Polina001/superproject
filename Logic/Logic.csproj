@@ -54,16 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context.cs" />
-    <Compile Include="ConvertingByteToJpeg.cs" />
     <Compile Include="CreatingListOfImages.cs" />
-    <Compile Include="FindinThemeID.cs" />
     <Compile Include="Inscription.cs" />
-    <Compile Include="Migrations\201612131222343_InitialCreate.cs" />
-    <Compile Include="Migrations\201612131222343_InitialCreate.Designer.cs">
-      <DependentUpon>201612131222343_InitialCreate.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="PictureForProject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PuttingPicturesTohetger.cs" />
@@ -74,11 +67,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201612131222343_InitialCreate.resx">
-      <DependentUpon>201612131222343_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

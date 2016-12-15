@@ -16,7 +16,6 @@ namespace UI
     {
         public ChrisPost()
         {
-            InitializeComponent();
             MetroStyleManager.Default.Style = MetroFramework.MetroColorStyle.Lime;
             MetroStyleManager.Default.Theme = MetroFramework.MetroThemeStyle.Dark;
         }
