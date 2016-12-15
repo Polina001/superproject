@@ -30,7 +30,7 @@ namespace Logic.Migrations
             //
 
             // Load file meta data with FileInfo
-            FileInfo fileInfo = new FileInfo(@"2.jpg");
+            FileInfo fileInfo = new FileInfo(@"нг5.jpg");
 
             // The byte[] to save the data in
             byte[] img = new byte[fileInfo.Length];

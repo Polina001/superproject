@@ -10,7 +10,7 @@ namespace Logic
     {
         static void Main(string[] args)
         {
-            PuttingPicturesTogether p = new PuttingPicturesTogether();
+            PuttingPicturesTohetger p = new PuttingPicturesTohetger();
             p.PuttingTogether();
 
             //using(var context = new Context())
