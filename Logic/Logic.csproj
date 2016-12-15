@@ -54,9 +54,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context.cs" />
+    <Compile Include="ConvertingByteToJpeg.cs" />
     <Compile Include="CreatingListOfImages.cs" />
     <Compile Include="Inscription.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PictureForProject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PuttingPicturesTohetger.cs" />
