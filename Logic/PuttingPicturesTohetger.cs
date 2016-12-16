@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    class PuttingPicturesTohetger
+    public class PuttingPicturesTohetger
     {
         public System.Drawing.Image PuttingTogether()
         {
