@@ -21,7 +21,7 @@ namespace UI
             MetroStyleManager.Default.Style = MetroFramework.MetroColorStyle.Lime;
             MetroStyleManager.Default.Theme = MetroFramework.MetroThemeStyle.Dark;
 
-            metroComboBox1.Items.AddRange(new string[] { "Новый год","День рождения", "К настроению" });
+            metroComboBox1.Items.AddRange(new string[] { "Christmas","Birthday","My mood" });
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -50,8 +50,22 @@ namespace UI
         {
             //выпадающий список тем
             string selectedState = metroComboBox1.SelectedItem.ToString();
+
+            Logic.IdentifyTheme it = new Logic.IdentifyTheme();
+
+            var ThemeID = it.IdentifyThemeNumber(metroComboBox1);
+
             Form4 f4 = new Form4();
-            f4.ShowDialog();
+           // f4.ShowDialog();
+
+            Logic.CreatingListOfImages cloi = new Logic.CreatingListOfImages();
+            var ListOfImages = cloi.ConvertingToListOfImages(ThemeID);
+
+            foreach (var item in ListOfImages)
+            {
+                pictureBox1.Location = new Point(37, 137);
+                pictureBox1.Image = item;
+            }
         }
     }
 }
