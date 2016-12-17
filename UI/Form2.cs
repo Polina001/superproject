@@ -21,7 +21,7 @@ namespace UI
             MetroStyleManager.Default.Style = MetroFramework.MetroColorStyle.Lime;
             MetroStyleManager.Default.Theme = MetroFramework.MetroThemeStyle.Dark;
 
-            metroComboBox1.Items.AddRange(new string[] { "Christmas","Birthday","My mood" });
+            metroComboBox1.Items.AddRange(new string[] { "christmas","birthday","my mood" });
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
