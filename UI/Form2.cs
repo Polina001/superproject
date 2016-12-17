@@ -20,6 +20,8 @@ namespace UI
             InitializeComponent();
             MetroStyleManager.Default.Style = MetroFramework.MetroColorStyle.Lime;
             MetroStyleManager.Default.Theme = MetroFramework.MetroThemeStyle.Dark;
+
+            metroComboBox1.Items.AddRange(new string[] { "Новый год","День рождения", "К настроению" });
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -35,11 +37,7 @@ namespace UI
 
         private void Create_Click(object sender, EventArgs e)
         {
-            Logic.PuttingPicturesTohetger LogicPPT = new Logic.PuttingPicturesTohetger();
-            var postcard = LogicPPT.PuttingTogether();
-
-            Logic.OutPuttingInPb LogicOiPb = new Logic.OutPuttingInPb();
-            LogicOiPb.OutputtingPicture(pictureBox1, postcard);
+            //здесь создается картинка и выводится в pictureBox
         }
 
         private void Clean_Click(object sender, EventArgs e)
@@ -51,6 +49,9 @@ namespace UI
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //выпадающий список тем
+            string selectedState = metroComboBox1.SelectedItem.ToString();
+            Form4 f4 = new Form4();
+            f4.ShowDialog();
         }
     }
 }
