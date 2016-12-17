@@ -10,7 +10,7 @@ namespace Logic.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             ContextKey = "Logic.Context";
         }
 

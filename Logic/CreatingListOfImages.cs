@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    class CreatingListOfImages
+    public class CreatingListOfImages
     {
         public List<System.Drawing.Image> ConvertingToListOfImages(int ID)
         {
