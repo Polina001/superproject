@@ -35,7 +35,11 @@ namespace UI
 
         private void Create_Click(object sender, EventArgs e)
         {
-            //здесь создается картинка и выводится в pictureBox
+            Logic.PuttingPicturesTohetger LogicPPT = new Logic.PuttingPicturesTohetger();
+            var postcard = LogicPPT.PuttingTogether();
+
+            Logic.OutPuttingInPb LogicOiPb = new Logic.OutPuttingInPb();
+            LogicOiPb.OutputtingPicture(pictureBox1, postcard);
         }
 
         private void Clean_Click(object sender, EventArgs e)
