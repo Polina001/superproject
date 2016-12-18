@@ -21,9 +21,11 @@ namespace Logic
                               where s.ThemeName == StringTheme
                               select s.ID;
 
-                var StringID = ThemeID.ToString();
-                var ID = int.Parse(StringID);
+                int ID = 1;
+                var LIST = ThemeID.ToString();
+                int.TryParse(LIST, out ID);
                 return ID;
+                
             }
 
             
