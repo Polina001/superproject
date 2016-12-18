@@ -21,7 +21,7 @@ namespace UI
             MetroStyleManager.Default.Style = MetroFramework.MetroColorStyle.Lime;
             MetroStyleManager.Default.Theme = MetroFramework.MetroThemeStyle.Dark;
 
-            metroComboBox1.Items.AddRange(new string[] { "christmas","birthday","my mood" });
+            metroComboBox1.Items.AddRange(new string[] { "Christmas","Birthday","My mood" });
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -49,38 +49,23 @@ namespace UI
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //выпадающий список тем
-            string selectedState = metroComboBox1.SelectedItem.ToString();
+            //string selectedState = metroComboBox1.SelectedItem.ToString();
 
-            Logic.IdentifyTheme it = new Logic.IdentifyTheme();
+            //Logic.IdentifyTheme it = new Logic.IdentifyTheme();
 
-            var ThemeID = it.IdentifyThemeNumber(metroComboBox1);
+            //var ThemeID = it.IdentifyThemeNumber(metroComboBox1);
 
             Form4 f4 = new Form4();
-           // f4.ShowDialog();
+            f4.ShowDialog();
 
-            Logic.CreatingListOfImages cloi = new Logic.CreatingListOfImages();
-            var ListOfImages = cloi.ConvertingToListOfImages(ThemeID);
+            //Logic.CreatingListOfImages cloi = new Logic.CreatingListOfImages();
+            //var ListOfImages = cloi.ConvertingToListOfImages(ThemeID);
 
-            foreach (var item in ListOfImages)
-            {
-                //pictureBox1.Location = new Point(37, 137);
-                //pictureBox1.Image = item;
-                
-            }
-            System.Drawing.Image FinalPostCard = new Bitmap(155, 795);
-
-            Graphics GraphicFinalPostCard = Graphics.FromImage(FinalPostCard);
-
-            GraphicFinalPostCard.DrawImage(System.Drawing.Image.FromFile(@"../../img1.jpg"), new Rectangle(0, 0, FinalPostCard.Width / 2, FinalPostCard.Height));
-
-            Logic.OutPuttingInPb op = new Logic.OutPuttingInPb();
-
-            FinalPostCard.Save(@"../../finalfornatasha.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
-
-            op.OutputtingPicture(pictureBox1, FinalPostCard);
-
-
-
+            //foreach (var item in ListOfImages)
+            //{
+            //    pictureBox1.Location = new Point(37, 137);
+            //    pictureBox1.Image = item;
+            //}
         }
     }
 }
