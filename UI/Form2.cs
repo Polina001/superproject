@@ -63,9 +63,24 @@ namespace UI
 
             foreach (var item in ListOfImages)
             {
-                pictureBox1.Location = new Point(37, 137);
-                pictureBox1.Image = item;
+                //pictureBox1.Location = new Point(37, 137);
+                //pictureBox1.Image = item;
+                
             }
+            System.Drawing.Image FinalPostCard = new Bitmap(155, 795);
+
+            Graphics GraphicFinalPostCard = Graphics.FromImage(FinalPostCard);
+
+            GraphicFinalPostCard.DrawImage(System.Drawing.Image.FromFile(@"../../img1.jpg"), new Rectangle(0, 0, FinalPostCard.Width / 2, FinalPostCard.Height));
+
+            Logic.OutPuttingInPb op = new Logic.OutPuttingInPb();
+
+            FinalPostCard.Save(@"../../finalfornatasha.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+
+            op.OutputtingPicture(pictureBox1, FinalPostCard);
+
+
+
         }
     }
 }

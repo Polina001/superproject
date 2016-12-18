@@ -10,15 +10,21 @@ namespace Logic
     {
         static void Main(string[] args)
         {
-            PuttingPicturesTohetger p = new PuttingPicturesTohetger();
-            p.PuttingTogether();
+            
 
             using (var context = new Context())
             {
+                CreatingListOfImages cli = new CreatingListOfImages();
+                var id = 3;
+                var testlist = cli.ConvertingToListOfImages(id);
 
-                var test = from t in context.Theme
-                           where t.ID == 1
-                           select t;
+                if (testlist.Count == 0 )
+                    Console.WriteLine("empty list");
+                PuttingPicturesTohetger p = new PuttingPicturesTohetger();
+                p.PuttingTogether(testlist[0], testlist[1]);
+
+                Console.WriteLine("done");
+                Console.ReadLine();
                                        
             }
         }
