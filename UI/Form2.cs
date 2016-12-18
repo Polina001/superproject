@@ -49,23 +49,23 @@ namespace UI
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //выпадающий список тем
-            string selectedState = metroComboBox1.SelectedItem.ToString();
+            //string selectedState = metroComboBox1.SelectedItem.ToString();
 
-            Logic.IdentifyTheme it = new Logic.IdentifyTheme();
+            //Logic.IdentifyTheme it = new Logic.IdentifyTheme();
 
-            var ThemeID = it.IdentifyThemeNumber(metroComboBox1);
+            //var ThemeID = it.IdentifyThemeNumber(metroComboBox1);
 
             Form4 f4 = new Form4();
-           // f4.ShowDialog();
+            f4.ShowDialog();
 
-            Logic.CreatingListOfImages cloi = new Logic.CreatingListOfImages();
-            var ListOfImages = cloi.ConvertingToListOfImages(ThemeID);
+            //Logic.CreatingListOfImages cloi = new Logic.CreatingListOfImages();
+            //var ListOfImages = cloi.ConvertingToListOfImages(ThemeID);
 
-            foreach (var item in ListOfImages)
-            {
-                pictureBox1.Location = new Point(37, 137);
-                pictureBox1.Image = item;
-            }
+            //foreach (var item in ListOfImages)
+            //{
+            //    pictureBox1.Location = new Point(37, 137);
+            //    pictureBox1.Image = item;
+            //}
         }
     }
 }
